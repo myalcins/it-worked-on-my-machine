@@ -7,9 +7,9 @@ const chalk = require('chalk');
 const program = new Command();
 
 program
-  .name('it-worked-on-my-machine')
+  .name('it-works-on-my-machine')
   .version('1.0.0')
-  .description('It worked on my machine');
+  .description('It works on my machine');
 
 program
   .requiredOption('-u, --url <type>', 'The URL to run tests on')

@@ -1,4 +1,4 @@
-# it-worked-on-my-machine
+# it-works-on-my-machine
 
 A CLI tool that lets you test your local JavaScript builds against live websites by intercepting and replacing remote JS files on-the-fly using Playwright.
 
@@ -9,7 +9,7 @@ Ever had a bug that only appears in production? Or need to test your local chang
 ## Installation
 
 ```bash
-npm install -g it-worked-on-my-machine
+npm install -g it-works-on-my-machine
 ```
 
 Or run locally:
@@ -22,7 +22,7 @@ npm link
 ## Usage
 
 ```bash
-it-work-on-my-machine -u <url> -l <local-file> -r <remote-file> [options]
+it-works-on-my-machine -u <url> -l <local-file> -r <remote-file> [options]
 ```
 
 ### Required Options
@@ -38,6 +38,7 @@ it-work-on-my-machine -u <url> -l <local-file> -r <remote-file> [options]
 | Option | Description | Default |
 |--------|-------------|---------|
 | `--headless` | Run browser in headless mode | `false` |
+| `-w, --watch` | Watch for changes and auto-reload | `false` |
 
 ## Examples
 
@@ -46,7 +47,7 @@ it-work-on-my-machine -u <url> -l <local-file> -r <remote-file> [options]
 Test your local bundle against a production site:
 
 ```bash
-it-work-on-my-machine \
+it-works-on-my-machine \
   -u https://example.com \
   -l ./dist/bundle.js \
   -r https://example.com/assets/app.js
@@ -59,7 +60,7 @@ This opens a browser window where you can manually test. The browser pauses for 
 Run in headless mode for automated testing or screenshots:
 
 ```bash
-it-work-on-my-machine \
+it-works-on-my-machine \
   -u https://example.com \
   -l ./dist/bundle.js \
   -r https://example.com/assets/app.js \
@@ -67,6 +68,18 @@ it-work-on-my-machine \
 ```
 
 In headless mode, a `screenshot.png` is saved to the current directory.
+
+### Watch Mode
+
+Auto-reload when your local file changes:
+
+```bash
+it-works-on-my-machine \
+  -u https://example.com \
+  -l ./dist/bundle.js \
+  -r https://example.com/assets/app.js \
+  --watch
+```
 
 ## How It Works
 
@@ -86,4 +99,3 @@ In headless mode, a `screenshot.png` is saved to the current directory.
 ## License
 
 ISC
-

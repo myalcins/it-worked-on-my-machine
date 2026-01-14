@@ -1,15 +1,43 @@
 {
-  "name": "it-worked-on-my-machine",
+  "name": "it-works-on-my-machine",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Test local JS builds against live websites by intercepting and replacing remote files with Playwright",
+  "main": "src/index.js",
   "bin": {
-    "it-work-on-my-machine": "./bin/cli.js"
+    "it-works-on-my-machine": "./bin/cli.js"
   },
-  "keywords": ["it-worked-on-my-machine", "it-works-on-prod"],
-  "author": "",
+  "keywords": [
+    "it-works-on-my-machine",
+    "it-works-on-prod",
+    "playwright",
+    "testing",
+    "debugging",
+    "javascript",
+    "intercept",
+    "proxy",
+    "local-development",
+    "cli"
+  ],
+  "author": "myalcins <myalcinsdev@gmail.com>",
   "license": "ISC",
   "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myalcins/it-works-on-my-machine.git"
+  },
+  "bugs": {
+    "url": "https://github.com/myalcins/it-works-on-my-machine/issues"
+  },
+  "homepage": "https://github.com/myalcins/it-works-on-my-machine",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "LICENSE",
+    "readme.md"
+  ],
   "dependencies": {
     "chalk": "^4.1.0",
     "commander": "^14.0.2",
