@@ -1,0 +1,18 @@
+{
+  "name": "it-worked-on-my-machine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "it-work-on-my-machine": "./bin/cli.js"
+  },
+  "keywords": ["it-worked-on-my-machine", "it-works-on-prod"],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^14.0.2",
+    "playwright": "^1.57.0"
+  }
+}
